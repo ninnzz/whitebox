@@ -1,0 +1,31 @@
+<div class="main_page container">
+    <div class="menu container">
+        <h3>Menu</h3>
+        <table>
+            <thead><tr><td></td><td>Starts at</td></tr></thead>
+            <tbody>
+                {% for menu_item in collections.menu %}
+                    <tr><td>{{ menu_item.data.name }}</td><td>{{ menu_item.data.priceStart }}</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="/menu">Full menu here</a>        
+    </div>
+
+    <div class="services container">
+        <h3>Coffee Cart Service</h3>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+    </div>
+
+    <div class="reachus container">
+        <h3>Let's talk?</h3>
+        <ul class="socials-list">
+            <li><img class="social-icon" src="images/fb.svg" /><a href="https://www.facebook.com/wbcollectiveph" target="_blank">wbcollectiveph</a></li>
+            <li><img class="social-icon" src="images/ig.svg" /><a href="https://www.instagram.com/wbcollectiveph/" target="_blank">wbcollectiveph</a></li>
+            <li><img class="social-icon" src="images/email.svg" /><a href="mailto:whiteboxcllctv@gmail.com" target="_blank"> wbcollectiveph@gmail.com</a></li>
+            <li><img class="social-icon" src="images/gmap.svg" /><a href="https://goo.gl/maps/ne3XJaN2v4ZQgct47" target="_blank">NPM Bldg, 9010 Doña Aurora St, Lucena, 4301 Quezon</a></li>
+        </ul>
+    </div>
+</div>
