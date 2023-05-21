@@ -11,8 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Space+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Major+Mono+Display&family=Noto+Sans+Mono:wght@100&family=Space+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <!-- <link rel="stylesheet" href="/css/tailwind.css"> -->
 
@@ -20,54 +19,83 @@
 </head>
 <body>
     <div class="content">
-        <header class="header_container">
-    <ul class="nav_links">
-      <li><a class="header__link" href="/">WBC</a></li>
-      <li><a class="header__link" href="/menu">menu</a></li>
-      <li><a class="header__link" href="/services">services</a></li>
-      <li><a class="header__link" href="/about">about us</a></li>
+        <header class="header_container bg-white sticky top-0 z-50 flex items-right justify-end sm:justify-center">
+    <ul class="flex p-3">
+      <li class="mr-6 mx-auto">
+        <a class="header__link" href="/"><img src="/images/main_logo.png" class="fill-current h-8 w-8 mr-2" width="40" height="40"/></a>
+      </li>
+      <li class="mr-6 pt-1">
+        <a class="header__link font-thin font-mono text-gray-500 hover:bg-gray-200" href="/menu">menu</a>
+      </li>
+      <li class="mr-6 pt-1">
+        <a class="header__link font-thin font-mono text-gray-500 hover:bg-gray-200" href="/services">services</a>
+      </li>
+      <li class="mr-6 pt-1">
+        <a class="header__link font-thin font-mono text-gray-500 hover:bg-gray-200" href="/about">about us</a>
+      </li>
     </ul>
 </header>
-        <main class="main container">
-          <div class="main_page container">
-    <div class="menu container">
-        <h3>Menu</h3>
-        <table>
-            <thead><tr><td></td><td>Starts at</td></tr></thead>
-            <tbody>
-                
-                    <tr><td>Americano</td><td>100</td></tr>
-                
-                    <tr><td>Cappuccino</td><td>120</td></tr>
-                
-                    <tr><td>Latte</td><td>110</td></tr>
-                
-            </tbody>
-        </table>
-        <a href="/menu">Full menu here</a>        
+
+        <main class="main flex justify-center">
+          <div class="main_page container mx-auto">
+    <div class="banner-top container w-full justify-center text-center m-auto mb-20 mt-10">
+        <h3 class="text-5xl whitebox_name mb-5"><b class="whitebox_name_start">W</b>hitebox <b class="whitebox_name_start">C</b>ollective</h3>
+        <h4 class="text-sm"><i class="whitebox_name_supp font-thin">- for better days ahead -</i></h5>
+        <!-- <img src="/images/main_logo.png" width="100" height="100"/> -->
     </div>
+    <div class="grid justify-center gap-5 grid-cols-1 md:sm:grid-cols-2">
+        <div class="menu container justify-center text-center font-mono text-gray-500">
+            <h3 class="whitebox_name text-4xl">Menu</h3>
+            <table class="container mt-16">
+                <thead><tr><td class="w-6/12"></td> <td class="2/12"></td> <td class="w-4/12 font-light text-xs">starts at</td></tr></thead>
+                <tbody>
+                    
+                        <tr><td class="w-6/12 mt-10 p-0 py-1.5">Americano</td> <td class="w-2/12"></td> <td class="w-4/12">100</td></tr>
+                    
+                        <tr><td class="w-6/12 mt-10 p-0 py-1.5">Cappuccino</td> <td class="w-2/12"></td> <td class="w-4/12">120</td></tr>
+                    
+                        <tr><td class="w-6/12 mt-10 p-0 py-1.5">Latte</td> <td class="w-2/12"></td> <td class="w-4/12">110</td></tr>
+                    
+                        <tr><td class="w-6/12 mt-10 p-0 py-1.5">Spanish Latte</td> <td class="w-2/12"></td> <td class="w-4/12">100</td></tr>
+                    
+                        <tr><td class="w-6/12 mt-10 p-0 py-1.5">Oreo Latte</td> <td class="w-2/12"></td> <td class="w-4/12">100</td></tr>
+                    
+                </tbody>
+            </table>
+            <a href="/menu" class="bg-gray-900 text-white text-sm hover:bg-gray-200">Full menu here</a>        
+        </div>
 
-    <div class="services container">
-        <h3>Coffee Cart Service</h3>
+        <div class="right-side container justify-center mt-20 md:sm:mt-0">
+            <div class="services">
+                <h3 class="whitebox_name text-4xl text-center mb-5">Coffee Cart</h3>
+                <div class="flex">
+                    <img src="/images/cart.jpg" class="w-8/12 rounded-xl mx-auto"/>
+                </div>
+                <p class="font-mono text-gray-500 text-sm m-5">We offer coffee cart service for any occasion! Guaranteed to bring you the best coffee experience.</p>
+                
+            </div>
 
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-
-    </div>
-
-    <div class="reachus container">
-        <h3>Let's talk?</h3>
-        <ul class="socials-list">
-            <li><img class="social-icon" src="images/fb.svg" /><a href="https://www.facebook.com/wbcollectiveph" target="_blank">wbcollectiveph</a></li>
-            <li><img class="social-icon" src="images/ig.svg" /><a href="https://www.instagram.com/wbcollectiveph/" target="_blank">wbcollectiveph</a></li>
-            <li><img class="social-icon" src="images/email.svg" /><a href="mailto:whiteboxcllctv@gmail.com" target="_blank"> wbcollectiveph@gmail.com</a></li>
-            <li><img class="social-icon" src="images/gmap.svg" /><a href="https://goo.gl/maps/ne3XJaN2v4ZQgct47" target="_blank">NPM Bldg, 9010 Doña Aurora St, Lucena, 4301 Quezon</a></li>
-        </ul>
+            <div class="reachus container">
+                <h3 class="whitebox_name text-4xl text-center">Contact us</h3>
+                <p class="flex m-3 ml-5 md:sm:ml-10 text-sm text-gray-500 font-mono">
+                    <img class="social-icon" src="/images/fb.svg" class="w-20"/><a href="https://www.facebook.com/wbcollectiveph" target="_blank" class="ml-2 mr-5 hover:bg-gray-300">wbcollectiveph</a> 
+                    <img class="social-icon" src="/images/ig.svg" class="w-20"/><a href="https://www.instagram.com/wbcollectiveph/" target="_blank" class="ml-2 mr-5 hover:bg-gray-300">wbcollectiveph</a>
+                    <!-- <img class="social-icon" src="/images/email.svg" class="w-20"/><a href="mailto:whiteboxcllctv@gmail.com" target="_blank" class="ml-2 mr-5 hover:bg-gray-300"> wbcollectiveph@gmail.com</a> -->
+                </p>
+                <p class="flex m-3 ml-5 md:sm:ml-10 text-sm text-gray-500 font-mono">
+                    
+                    <img class="social-icon" src="/images/gmap.svg" class="w-20"/><a href="https://goo.gl/maps/ne3XJaN2v4ZQgct47" target="_blank" class="ml-2">NPM Bldg, 9010 Doña Aurora St, Lucena, 4301 Quezon</a>
+                </p>
+                    
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
         </main>
     </div>
-    <footer class="footer">
+    <footer class="footer w-full text-center m-0 mt-10 py-5 font-mono font-light text-gray-300 bg-gray-800">
         <p>&copy; Whitebox Collective 2023</p>
     </footer>
 </body>

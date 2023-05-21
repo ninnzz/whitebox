@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.whitebox_name {
+    font-family: 'Noto Sans Mono', monospace;
+    color: #626262;
+}
+
+.whitebox_name_start {
+    font-family: 'Major Mono Display', monospace;
+    color: #d3b186;
+}
+
+.whitebox_name_supp {
+    font-family: 'Fira Mono', monospace;
+    color: #717171;
+}

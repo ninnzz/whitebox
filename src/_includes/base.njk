@@ -11,8 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Space+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Major+Mono+Display&family=Noto+Sans+Mono:wght@100&family=Space+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{'/css/style.css' | url | safe}}">
     <!-- <link rel="stylesheet" href="{{'/css/tailwind.css' | url | safe}}"> -->
 
@@ -21,11 +20,11 @@
 <body>
     <div class="content">
         {% include "header.njk" %}
-        <main class="main container">
+        <main class="main flex justify-center">
           {{ content | safe }}
         </main>
     </div>
-    <footer class="footer">
+    <footer class="footer w-full text-center m-0 mt-10 py-5 font-mono font-light text-gray-300 bg-gray-800">
         <p>&copy; Whitebox Collective {% year %}</p>
     </footer>
 </body>
