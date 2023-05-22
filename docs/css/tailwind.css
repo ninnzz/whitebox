@@ -4,16 +4,27 @@
 
 
 .whitebox_name {
-    font-family: 'Noto Sans Mono', monospace;
-    color: #626262;
+    font-family: 'Lora', serif;
+    /* color: #ffffff; */
 }
 
 .whitebox_name_start {
-    font-family: 'Major Mono Display', monospace;
-    color: #d3b186;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    /* color: #ffd92f; */
 }
 
 .whitebox_name_supp {
     font-family: 'Fira Mono', monospace;
     color: #717171;
+}
+
+.roboto300 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.roboto100 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }

@@ -1,21 +1,21 @@
 <div class="main_page container mx-auto">
     <div class="banner-top container w-full justify-center text-center m-auto mb-20 mt-10">
-        <h3 class="text-5xl whitebox_name mb-5"><b class="whitebox_name_start">W</b>hitebox <b class="whitebox_name_start">C</b>ollective</h3>
-        <h4 class="text-sm"><i class="whitebox_name_supp font-thin">- for better days ahead -</i></h5>
+        <h3 class="text-5xl whitebox_name mb-5 w-3/4 m-auto">Whitebox Collective</h3>
+        <h4 class="text-sm"><i class="whitebox_name_supp font-md roboto100">for better days ahead</i></h5>
         <!-- <img src="/images/main_logo.png" width="100" height="100"/> -->
     </div>
-    <div class="grid justify-center gap-5 grid-cols-1 md:sm:grid-cols-2">
-        <div class="menu container justify-center text-center font-mono text-gray-500">
-            <h3 class="whitebox_name text-4xl">Menu</h3>
-            <table class="container mt-16">
+    <div class="grid justify-center gap-5 grid-cols-1 lg:md:sm:grid-cols-2">
+        <div class="menu container pb-10 justify-center text-center font-mono">
+            <h3 class="whitebox_name text-4xl pt-5">Menu</h3>
+            <table class="menu_table container mt-10 mb-10 roboto300">
                 <thead><tr><td class="w-6/12"></td> <td class="2/12"></td> <td class="w-4/12 font-light text-xs">starts at</td></tr></thead>
                 <tbody>
                     {% for menu_item in collections.menu %}
-                        <tr><td class="w-6/12 mt-10 p-0 py-1.5">{{ menu_item.data.name }}</td> <td class="w-2/12"></td> <td class="w-4/12">{{ menu_item.data.priceStart }}</td></tr>
+                        <tr><td class="w-6/12 mt-10 p-0 py-1.5 text-left pl-10">{{ menu_item.data.name }}</td> <td class="w-2/12"></td> <td class="w-4/12">{{ menu_item.data.priceStart }}</td></tr>
                     {% endfor %}
                 </tbody>
             </table>
-            <a href="/menu" class="bg-gray-900 text-white text-sm hover:bg-gray-200">Full menu here</a>        
+            <a href="/menu" class="text-gray-900 text-sm hover:bg-gray-500 p-1 mt-5 roboto300">- full menu here -</a>        
         </div>
 
         <div class="right-side container justify-center mt-20 md:sm:mt-0">
@@ -24,20 +24,21 @@
                 <div class="flex">
                     <img src="/images/cart.jpg" class="w-8/12 rounded-xl mx-auto"/>
                 </div>
-                <p class="font-mono text-gray-500 text-sm m-5">We offer coffee cart service for any occasion! Guaranteed to bring you the best coffee experience.</p>
+                <p class="roboto300 text-gray-500 text-md m-5">We offer coffee cart service for any occasion! Guaranteed to bring you the best coffee experience.</p>
                 
             </div>
 
-            <div class="reachus container">
+            <div class="reachus container mt-20 md:sm:mt-0 content-center text-center">
                 <h3 class="whitebox_name text-4xl text-center">Contact us</h3>
-                <p class="flex m-3 ml-5 md:sm:ml-10 text-sm text-gray-500 font-mono">
-                    <img class="social-icon" src="/images/fb.svg" class="w-20"/><a href="https://www.facebook.com/wbcollectiveph" target="_blank" class="ml-2 mr-5 hover:bg-gray-300">wbcollectiveph</a> 
-                    <img class="social-icon" src="/images/ig.svg" class="w-20"/><a href="https://www.instagram.com/wbcollectiveph/" target="_blank" class="ml-2 mr-5 hover:bg-gray-300">wbcollectiveph</a>
+                <p class="container mt-5 text-sm text-gray-500 mx-auto">
+                    <!-- <img class="social-icon" src="/images/fb.svg" class="w-20"/> -->
+                    FB: <a href="https://www.facebook.com/wbcollectiveph" target="_blank" class="ml-2 mr-5 text-yellow-600 hover:bg-gray-300 roboto300">wbcollectiveph</a> 
+                    <!-- <img class="social-icon" src="/images/ig.svg" class="w-20"/> -->
+                    IG: <a href="https://www.instagram.com/wbcollectiveph/" target="_blank" class="ml-2 mr-5 text-yellow-600 hover:bg-gray-300 roboto300">wbcollectiveph</a>
                     <!-- <img class="social-icon" src="/images/email.svg" class="w-20"/><a href="mailto:whiteboxcllctv@gmail.com" target="_blank" class="ml-2 mr-5 hover:bg-gray-300"> wbcollectiveph@gmail.com</a> -->
                 </p>
-                <p class="flex m-3 ml-5 md:sm:ml-10 text-sm text-gray-500 font-mono">
-                    
-                    <img class="social-icon" src="/images/gmap.svg" class="w-20"/><a href="https://goo.gl/maps/ne3XJaN2v4ZQgct47" target="_blank" class="ml-2">NPM Bldg, 9010 Doña Aurora St, Lucena, 4301 Quezon</a>
+                <p class="container mt-1 text-sm text-gray-500 font-mono roboto300">
+                    <a href="https://goo.gl/maps/ne3XJaN2v4ZQgct47" target="_blank" class="ml-2 roboto300 text-yellow-600">NPM Bldg, 9010 Doña Aurora St, Lucena, 4301 Quezon</a>
                 </p>
                     
                 </ul>
