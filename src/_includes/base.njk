@@ -17,15 +17,15 @@
 
 
 </head>
-<body>
-    <div class="content">
+<body class="flex flex-col h-screen">
+    <div class="content flex-grow">
         {% include "header.njk" %}
         <main class="main flex justify-center">
           {{ content | safe }}
         </main>
     </div>
-    <footer class="footer w-full text-center m-0 mt-10 py-5 font-mono font-light text-gray-300 bg-gray-800">
-        <p class="roboto300">&copy; Whitebox Collective {% year %}</p>
+    <footer class="footer w-full text-center py-5 mt-10 text-gray-300 bg-gray-950">
+        <p class="roboto300 text-white">&copy; Whitebox Collective {% year %}</p>
     </footer>
 </body>
 </html>

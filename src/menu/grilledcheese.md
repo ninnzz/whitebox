@@ -1,15 +1,13 @@
 ---
-title: Whitebox Cllctv Latte
-name: "Latte"
-description: "This is coffee with milk I think but more milk, no sugar please."
+title: "Whitebox Cllctv Grilled Cheese Sandwich"
+name: "Grilled Cheese Sandwich"
+description: "There's three cheese here I think. Toasted bread, sooo good. So much toast and cheese much wow!"
 images: 
   - "/images/catch-up.jpg"
 imageAlt: "Screenshots of catch up app"
-priceStart: "110"
-priceHot: "110"
-priceCold: "130"
+priceStart: "120"
 frontPage: true
-tags: ["drinks"]
+tags: ["foods"]
 ---
 
 ### The taste

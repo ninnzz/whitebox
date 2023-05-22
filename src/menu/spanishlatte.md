@@ -1,13 +1,15 @@
 ---
 title: "Whitebox Cllctv Spanish Latter"
 name: "Spanish Latte"
-description: "Just coffee no milk no sugar please"
+description: "Soy café con leche pero en español. Sin azúcar por favor."
 images: 
   - "/images/catch-up.jpg"
 imageAlt: "Screenshots of catch up app"
-priceStart: "100"
-priceHot: "100 (8oz)/120 (12oz)"
-priceCold: "100 (8oz)/120 (12oz)"
+priceStart: "120"
+priceHot: "120"
+priceCold: "130"
+frontPage: true
+tags: ["drinks"]
 ---
 
 ### The taste

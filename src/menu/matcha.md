@@ -1,13 +1,15 @@
 ---
 title: "Whitebox Cllctv Americano"
 name: "Matcha"
-description: "Just coffee no milk no sugar please"
+description: "Matcha good for business :)"
 images: 
   - "/images/catch-up.jpg"
 imageAlt: "Screenshots of catch up app"
 priceStart: "150"
-priceHot: "100 (8oz)/120 (12oz)"
-priceCold: "100 (8oz)/120 (12oz)"
+priceHot: "----"
+priceCold: "150"
+frontPage: true
+tags: ["drinks"]
 ---
 
 ### The taste

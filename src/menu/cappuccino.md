@@ -1,13 +1,15 @@
 ---
 title: Whitebox Cllctv Cappuccino
 name: "Cappuccino"
-description: "With milk but stronger lol"
+description: "Coffee with milk but little foam only or no foam. IDK"
 images: 
   - "/images/catch-up.jpg"
 imageAlt: "Screenshots of catch up app"
 priceStart: "120"
-priceHot: "120 (8oz)/120 (12oz)"
-priceCold: "120 (8oz)/120 (12oz)"
+priceHot: "120"
+priceCold: "130"
+frontPage: true
+tags: ["drinks"]
 ---
 
 ### The taste

@@ -6,8 +6,10 @@ images:
   - "/images/catch-up.jpg"
 imageAlt: "Screenshots of catch up app"
 priceStart: "100"
-priceHot: "100 (8oz)/120 (12oz)"
-priceCold: "100 (8oz)/120 (12oz)"
+priceHot: "100"
+priceCold: "120"
+frontPage: true
+tags: ["drinks"]
 ---
 
 ### The taste

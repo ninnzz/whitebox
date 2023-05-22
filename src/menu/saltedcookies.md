@@ -1,15 +1,13 @@
 ---
-title: Whitebox Cllctv Latte
-name: "Latte"
-description: "This is coffee with milk I think but more milk, no sugar please."
+title: "Whitebox Cllctv Salted Cookies"
+name: "Salted Cookies"
+description: "I like cookies coz im cookie monster k. tnx."
 images: 
   - "/images/catch-up.jpg"
 imageAlt: "Screenshots of catch up app"
-priceStart: "110"
-priceHot: "110"
-priceCold: "130"
+priceStart: "120"
 frontPage: true
-tags: ["drinks"]
+tags: ["foods"]
 ---
 
 ### The taste
