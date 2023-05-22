@@ -1,5 +1,5 @@
 const Image = require("@11ty/eleventy-img");
-// const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 async function imageShortcode(src, alt, sizes) {
   let metadata = await Image(`./src${src}`, {
@@ -20,7 +20,7 @@ async function imageShortcode(src, alt, sizes) {
 }
 
 module.exports = function (eleventyConfig) {
-    // eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+    eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
     eleventyConfig.addNunjucksAsyncShortcode("EleventyImage", imageShortcode);
     eleventyConfig.addPassthroughCopy("./src/css/");
@@ -29,6 +29,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ "./src/favicons": "/" });
 
     return {
+        pathPrefix: "whitebox",
         dir: {
             input: "src",
             output: "docs"
