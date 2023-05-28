@@ -23,8 +23,19 @@
         <div class="right-side container justify-center mt-20 md:sm:mt-0">
             <div class="services">
                 <h3 class="whitebox_name text-4xl text-center mb-5">Coffee Cart</h3>
-                <div class="flex">
-                    <img src="/images/cart.jpg" class="w-8/12 rounded-xl mx-auto"/>
+                <div class="container justify-center">
+                    <div class="container w-8/12 mx-auto overflow-hidden">
+                        <div class="mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide container"><img src="/images/p5.jpg" class="w-full rounded-xl"/></div>
+                                <div class="swiper-slide container"><img src="/images/p2.jpg" class="w-full rounded-xl"/></div>
+                                <div class="swiper-slide container"><img src="/images/p3.jpg" class="w-full rounded-xl"/></div>
+                                <div class="swiper-slide container"><img src="/images/p4.jpg" class="w-full rounded-xl"/></div>
+                                <div class="swiper-slide container"><img src="/images/p5.jpg" class="w-full rounded-xl"/></div>
+                            </div>
+                            <div class="swiper-pagination static"></div>
+                        </div>    
+                    </div>  
                 </div>
                 <p class="roboto300 text-gray-500 text-md m-5">We offer coffee cart service for any occasion! Guaranteed to bring you the best coffee experience.</p>
                 
@@ -46,3 +57,24 @@
         </div>
     </div>
 </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.mySwiper', {
+    // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        speed: 400,
+        effect: 'fade',
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+        slidesPerView: 1
+    });
+</script>

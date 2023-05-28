@@ -12,12 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="/whitebox/css/style.css">
-    <!-- <link rel="stylesheet" href="/whitebox/css/tailwind.css"> -->
-
 
 </head>
-<body class="flex flex-col h-screen">
+<body class="flex flex-col h-screen overflow-x-hidden">
     <div class="content flex-grow">
         <header class="header_container bg-white sticky top-0 z-50 flex items-right justify-end sm:justify-center">
     <ul class="flex p-3">
@@ -66,8 +65,19 @@
         <div class="right-side container justify-center mt-20 md:sm:mt-0">
             <div class="services">
                 <h3 class="whitebox_name text-4xl text-center mb-5">Coffee Cart</h3>
-                <div class="flex">
-                    <img src="/whitebox/images/cart.jpg" class="w-8/12 rounded-xl mx-auto">
+                <div class="container justify-center">
+                    <div class="container w-8/12 mx-auto overflow-hidden">
+                        <div class="mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide container"><img src="/whitebox/images/p5.jpg" class="w-full rounded-xl"></div>
+                                <div class="swiper-slide container"><img src="/whitebox/images/p2.jpg" class="w-full rounded-xl"></div>
+                                <div class="swiper-slide container"><img src="/whitebox/images/p3.jpg" class="w-full rounded-xl"></div>
+                                <div class="swiper-slide container"><img src="/whitebox/images/p4.jpg" class="w-full rounded-xl"></div>
+                                <div class="swiper-slide container"><img src="/whitebox/images/p5.jpg" class="w-full rounded-xl"></div>
+                            </div>
+                            <div class="swiper-pagination static"></div>
+                        </div>    
+                    </div>  
                 </div>
                 <p class="roboto300 text-gray-500 text-md m-5">We offer coffee cart service for any occasion! Guaranteed to bring you the best coffee experience.</p>
                 
@@ -90,6 +100,26 @@
     </div>
 </div>
 
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.mySwiper', {
+    // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        speed: 400,
+        effect: 'fade',
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+        slidesPerView: 1
+    });
+</script>
         </main>
     </div>
     <footer class="footer w-full text-center py-5 mt-10 text-gray-300 bg-gray-950">

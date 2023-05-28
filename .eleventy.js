@@ -25,6 +25,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addNunjucksAsyncShortcode("EleventyImage", imageShortcode);
     eleventyConfig.addPassthroughCopy("./src/css/");
     eleventyConfig.addWatchTarget("./src/css/");
+    eleventyConfig.addPassthroughCopy("./src/js/");
+    eleventyConfig.addWatchTarget("./src/js/");
     eleventyConfig.addPassthroughCopy("./src/images/");
     eleventyConfig.addPassthroughCopy({ "./src/favicons": "/" });
 
