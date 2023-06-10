@@ -17,9 +17,9 @@
 
 </head>
 <body class="flex flex-col h-screen overflow-x-hidden">
-    <div class="content flex-grow">
+    <div class="content w-full">
         {% include "header.njk" %}
-        <main class="main flex justify-center">
+        <main class="main container w-full mx-auto">
           {{ content | safe }}
         </main>
     </div>

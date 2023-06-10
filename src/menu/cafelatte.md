@@ -9,7 +9,7 @@ priceStart: "110"
 priceHot: "110"
 priceCold: "130"
 frontPage: true
-tags: ["drinks"]
+tags: ["drinks", "front_drinks"]
 ---
 
 ### The taste

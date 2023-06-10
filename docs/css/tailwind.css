@@ -40,3 +40,11 @@
     -moz-filter: grayscale(0%);
     filter: grayscale(0%);
 }
+
+.menu_front {
+    transition: all 0.5s ease;
+} 
+
+.menu_front:hover {
+    background-color: rgb(231, 231, 231);
+}
