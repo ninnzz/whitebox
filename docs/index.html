@@ -16,10 +16,9 @@
     <link rel="stylesheet" href="/css/style.css">
 
 </head>
-<body class="overflow-x-hidden">
-
-    <div class="content flex-grow">
-        <header class="header_container bg-white sticky top-0 z-50 flex items-right justify-end sm:justify-center drop-shadow-lg">
+<body class="overflow-x-hidden h-auto">
+    
+    <header class="header_container bg-white sticky top-0 z-50 flex items-right justify-end sm:justify-center drop-shadow-lg">
     <ul class="flex p-3">
       <li class="mr-6 mx-auto">
         <a class="header__link" href="/"><img src="/images/main_logo.png" class="fill-current h-8 w-8 mr-2" width="40" height="40"/></a>
@@ -36,13 +35,14 @@
     </ul>
 </header>
 
-        <main class="container mx-auto h-screen snap-y snap-mandatory overflow-y-scroll">
-            <!-- <div class="grid place-content-center w-full justify-center text-center h-96">
+    <!-- <main class="flex flex-col justify-center w-screen h-full snap-y snap-mandatory overflow-y-scroll"> -->
+    <main class="container mx-auto justify-center w-screen h-screen snap-y snap-mandatory overflow-y-scroll">
+        <!-- <div class="grid place-content-center w-full justify-center text-center h-96">
     <h3 class="text-6xl whitebox_name mb p-5 w-3/4 m-auto text-white bg-black">Whitebox Collective</h3>
     <h4 class="text-sm text-yellow-600"><i class="whitebox_name_supp font-md text-lg roboto100">for better days ahead</i></h5>
 </div> -->
 <div class="snap-center flex flex-wrap items-center justify-center h-screen mb-12 bg-fixed grayscale bg-center bg-cover bg-[url('/images/p2.jpg')]">
-    <div class="w-full"><h3 class="text-6xl text-center whitebox_name mb p-5 w-3/4 m-auto text-white bg-black bg-opacity-75">Whitebox Collective</h3></div> 
+    <div class="w-full"><h3 class="text-6xl text-center whitebox_name mb p-5 w-full md:sm:w-3/4 m-auto text-white bg-black bg-opacity-75">Whitebox Collective</h3></div> 
 </div>
 <div id="menu" class="snap-start main_page container mx-auto w-full pt-10">
     <div class="grid justify-center gap-1 grid-cols-1 lg:md:sm:grid-cols-3">
@@ -173,39 +173,81 @@
 </div>
 
 
-<div class="snap-center snap-y snap-mandatory h-screen overflow-scroll">
-    <div class="flex flex-col md:sm:flex-row h-screen w-full snap-start">
-        <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full mb-12 bg-fixed bg-center bg-cover bg-[url('/images/cart2.jpg')]">
-        </div>
-        <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full grid place-content-center">
-            <p class="whitebox_name text-3xl">Weddings</p>
-        </div>
+<!-- <div class="snap-center snap-y snap-mandatory h-screen overflow-scroll"> -->
+<!-- <div class="flex flex-col md:sm:flex-row h-screen w-full snap-start">
+    <div class="container w-full md:sm:w-6/12 h-screen md:sm:h-screen mb-12 bg-fixed bg-center bg-cover bg-[url('/images/cart2.jpg')] grid place-content-center">
+        <p class="visible md:sm:invisible whitebox_name text-4xl bg-black opacity-70 text-white p-5">Weddings</p>
     </div>
-
-    <div class="flex flex-col md:sm:flex-row h-screen w-full snap-start">
-        <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full grid place-content-center">
-            <p class="whitebox_name text-3xl">Reunions</p>
-        </div>
-        <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full mb-12 bg-fixed bg-center bg-cover bg-[url('/images/cart3.jpg')]">
-        </div>
-    </div>
-
-    <div class="flex flex-col md:sm:flex-row h-screen w-full snap-start">
-        <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full mb-12 bg-fixed bg-center bg-cover bg-[url('/images/cart4.jpeg')]">
-        </div>
-        <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full grid place-content-center">
-            <p class="whitebox_name text-3xl">Baptismals</p>
-        </div>
-    </div>
-
-    <div class="flex flex-col md:sm:flex-row h-screen w-full snap-start">
-        <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full grid place-content-center">
-            <p class="whitebox_name text-3xl">Birthdays</p>
-        </div>
-        <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full mb-12 bg-fixed bg-center bg-cover bg-[url('/images/p3.jpg')]">
-        </div>
+    <div class="invisible md:sm:visible container w-full md:sm:w-6/12 h-1/2 md:sm:h-full grid place-content-center">
+        <p class="whitebox_name text-3xl">Weddings</p>
     </div>
 </div>
+
+<div class="flex flex-col md:sm:flex-row h-screen w-full snap-start">
+    <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full grid place-content-center">
+        <p class="whitebox_name text-3xl">Reunions</p>
+    </div>
+    <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full mb-12 bg-fixed bg-center bg-cover bg-[url('/images/cart3.jpg')]">
+    </div>
+</div>
+
+<div class="flex flex-col md:sm:flex-row h-screen w-full snap-start">
+    <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full mb-12 bg-fixed bg-center bg-cover bg-[url('/images/cart4.jpeg')]">
+    </div>
+    <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full grid place-content-center">
+        <p class="whitebox_name text-3xl">Baptismals</p>
+    </div>
+</div>
+
+<div class="flex flex-col md:sm:flex-row h-screen w-full snap-start">
+    <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full grid place-content-center">
+        <p class="whitebox_name text-3xl">Birthdays</p>
+    </div>
+    <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full mb-12 bg-fixed bg-center bg-cover bg-[url('/images/p3.jpg')]">
+    </div>
+</div> -->
+<!-- </div> -->
+
+
+<!-- <div class="snap-center snap-y snap-mandatory h-screen overflow-scroll"> -->
+<div class="grid auto-cols-max justify-center grid-cols-1 md:sm:grid-cols-2 h-screen snap-center">
+    <div class="container h-screen md:sm:h-screen mb-12 bg-fixed bg-center bg-cover bg-[url('/images/cart2.jpg')] grid place-content-center">
+        <p class="visible md:sm:invisible whitebox_name text-4xl bg-black opacity-70 text-white p-5">Weddings</p>
+    </div>
+    <div class="invisible md:sm:visible container h-0 md:sm:h-full grid place-content-center">
+        <p class="whitebox_name text-3xl">Weddings</p>
+    </div>
+</div>
+
+<div class="grid auto-cols-max justify-center grid-cols-1 md:sm:grid-cols-2 h-screen snap-center">
+    <div class="invisible md:sm:visible container h-0 md:sm:h-full grid place-content-center">
+        <p class="whitebox_name text-3xl">Reunions</p>
+    </div>
+    <div class="container h-screen md:sm:h-screen mb-12 bg-fixed bg-center bg-cover bg-[url('/images/cart3.jpg')] grid place-content-center">
+        <p class="visible md:sm:invisible whitebox_name text-4xl bg-black opacity-70 text-white p-5">Reunions</p>
+    </div>
+</div>
+
+<div class="grid auto-cols-max justify-center grid-cols-1 md:sm:grid-cols-2 h-screen snap-center">
+    <div class="container h-screen md:sm:h-screen mb-12 bg-fixed bg-center bg-cover bg-[url('/images/cart4.jpeg')] grid place-content-center">
+        <p class="visible md:sm:invisible whitebox_name text-4xl bg-black opacity-70 text-white p-5">Baptismals</p>
+    </div>
+    <div class="invisible md:sm:visible container h-0 md:sm:h-full grid place-content-center">
+        <p class="whitebox_name text-3xl">Baptismals</p>
+    </div>
+</div>
+
+<div class="grid auto-cols-max justify-center grid-cols-1 md:sm:grid-cols-2 h-screen snap-center">
+    <div class="invisible md:sm:visible container h-0 md:sm:h-full grid place-content-center">
+        <p class="whitebox_name text-3xl">Birthdays</p>
+    </div>
+    <div class="container h-screen md:sm:h-screen mb-12 bg-fixed bg-center bg-cover bg-[url('/images/p3.jpg')] grid place-content-center">
+        <p class="visible md:sm:invisible whitebox_name text-4xl bg-black opacity-70 text-white p-5">Birthdays</p>
+    </div>
+</div>
+<!-- </div> -->
+
+<!-- end -->
 
 
 <div class="snap-start container w-full w-max-full mx-auto text-center mt-12 mb-14 h-screen grid place-content-center">
@@ -244,9 +286,8 @@
         </p>
     </div>
 </div>
-        </main>
-    </div>
-
+    </main>
+    
 
     <!-- <footer class="footer w-full text-center py-5 text-gray-300 bg-gray-950">
         <p class="roboto300 text-white">&copy; Whitebox Collective 2023</p>
