@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,18 +16,19 @@
     <link rel="stylesheet" href="/css/style.css">
 
 </head>
-<body class="flex flex-col h-screen overflow-x-hidden">
-    <div class="content w-full">
+<body class="overflow-x-hidden">
+
+    <div class="content flex-grow">
         <header class="header_container bg-white sticky top-0 z-50 flex items-right justify-end sm:justify-center drop-shadow-lg">
     <ul class="flex p-3">
       <li class="mr-6 mx-auto">
         <a class="header__link" href="/"><img src="/images/main_logo.png" class="fill-current h-8 w-8 mr-2" width="40" height="40"/></a>
       </li>
       <li class="mr-6 pt-1">
-        <a class="header__link font-thin roboto300 text-gray-500 hover:bg-gray-200" href="/menu">menu</a>
+        <a class="header__link font-thin roboto300 text-gray-500 hover:bg-gray-200" href="/#menu">menu</a>
       </li>
       <li class="mr-6 pt-1">
-        <a class="header__link font-thin roboto300 text-gray-500 hover:bg-gray-200" href="/services">services</a>
+        <a class="header__link font-thin roboto300 text-gray-500 hover:bg-gray-200" href="/#services">services</a>
       </li>
       <li class="mr-6 pt-1">
         <a class="header__link font-thin roboto300 text-gray-500 hover:bg-gray-200" href="/about">about us</a>
@@ -35,8 +36,8 @@
     </ul>
 </header>
 
-        <main class="main container w-full mx-auto">
-          <div class="main_page container mx-auto">
+        <main class="container mx-auto h-screen snap-y snap-mandatory overflow-y-scroll">
+            <div class="main_page container mx-auto">
     <div class="banner-top container w-full justify-center text-center m-auto mb-10 mt-10">
         <h3 class="text-5xl whitebox_name mb-5 w-3/4 m-auto">About Us</h3>
         <h4 class="text-sm"><i class="whitebox_name_supp  roboto100 text-yellow-600 p-5"> Our offering consists of simple yet delicately crafted drinks and food items. Enjoy the best we have to offer!</i></h5>
@@ -124,8 +125,10 @@
 </script>
         </main>
     </div>
-    <footer class="footer w-full text-center py-5 mt-10 text-gray-300 bg-gray-950">
+
+
+    <!-- <footer class="footer w-full text-center py-5 text-gray-300 bg-gray-950">
         <p class="roboto300 text-white">&copy; Whitebox Collective 2023</p>
-    </footer>
+    </footer> -->
 </body>
 </html>

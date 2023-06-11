@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,18 +16,19 @@
     <link rel="stylesheet" href="/css/style.css">
 
 </head>
-<body class="flex flex-col h-screen overflow-x-hidden">
-    <div class="content w-full">
+<body class="overflow-x-hidden">
+
+    <div class="content flex-grow">
         <header class="header_container bg-white sticky top-0 z-50 flex items-right justify-end sm:justify-center drop-shadow-lg">
     <ul class="flex p-3">
       <li class="mr-6 mx-auto">
         <a class="header__link" href="/"><img src="/images/main_logo.png" class="fill-current h-8 w-8 mr-2" width="40" height="40"/></a>
       </li>
       <li class="mr-6 pt-1">
-        <a class="header__link font-thin roboto300 text-gray-500 hover:bg-gray-200" href="/menu">menu</a>
+        <a class="header__link font-thin roboto300 text-gray-500 hover:bg-gray-200" href="/#menu">menu</a>
       </li>
       <li class="mr-6 pt-1">
-        <a class="header__link font-thin roboto300 text-gray-500 hover:bg-gray-200" href="/services">services</a>
+        <a class="header__link font-thin roboto300 text-gray-500 hover:bg-gray-200" href="/#services">services</a>
       </li>
       <li class="mr-6 pt-1">
         <a class="header__link font-thin roboto300 text-gray-500 hover:bg-gray-200" href="/about">about us</a>
@@ -35,134 +36,220 @@
     </ul>
 </header>
 
-        <main class="main container w-full mx-auto">
-          <div class="grid place-content-center w-full justify-center text-center h-96">
+        <main class="container mx-auto h-screen snap-y snap-mandatory overflow-y-scroll">
+            <!-- <div class="grid place-content-center w-full justify-center text-center h-96">
     <h3 class="text-6xl whitebox_name mb p-5 w-3/4 m-auto text-white bg-black">Whitebox Collective</h3>
     <h4 class="text-sm text-yellow-600"><i class="whitebox_name_supp font-md text-lg roboto100">for better days ahead</i></h5>
+</div> -->
+<div class="snap-center flex flex-wrap items-center justify-center h-screen mb-12 bg-fixed grayscale bg-center bg-cover bg-[url('/images/p2.jpg')]">
+    <div class="w-full"><h3 class="text-6xl text-center whitebox_name mb p-5 w-3/4 m-auto text-white bg-black bg-opacity-75">Whitebox Collective</h3></div> 
 </div>
-<div class="main_page container mx-0 w-full">
-    <div class="grid justify-center gap-1 grid-cols-1 lg:md:sm:grid-cols-2">
-        <div class="container justify-center mt-0 h-44 lg:md:sm:h-screen bg-cover bg-center bg-[url('/images/p1.jpeg')]">
-            <!-- <div class="services">
-                <h3 class="whitebox_name text-4xl text-center mb-5">Coffee Cart</h3>
-                <div class="container justify-center">
-                    <div class="container w-8/12 mx-auto overflow-hidden">
-                        <div class="mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide container"><img src="/images/p5.jpg" class="w-full rounded-xl"/></div>
-                                <div class="swiper-slide container"><img src="/images/p2.jpg" class="w-full rounded-xl"/></div>
-                                <div class="swiper-slide container"><img src="/images/p3.jpg" class="w-full rounded-xl"/></div>
-                                <div class="swiper-slide container"><img src="/images/p4.jpg" class="w-full rounded-xl"/></div>
-                                <div class="swiper-slide container"><img src="/images/p5.jpg" class="w-full rounded-xl"/></div>
-                            </div>
-                            <div class="swiper-pagination static"></div>
-                        </div>    
-                    </div>  
-                </div>
-                <p class="roboto300 text-gray-500 text-md m-5">We offer coffee cart service for any occasion! Guaranteed to bring you the best coffee experience.</p>
-                
-            </div>
-
-            <div class="reachus container mt-20 md:sm:mt-0 content-center text-center">
-                <h3 class="whitebox_name text-4xl text-center">Contact us</h3>
-                <p class="container mt-5 text-sm text-gray-500 mx-auto">
-                    FB: <a href="https://www.facebook.com/wbcollectiveph" target="_blank" class="ml-2 mr-5 text-yellow-600 hover:bg-gray-300 roboto300">wbcollectiveph</a> 
-                    IG: <a href="https://www.instagram.com/wbcollectiveph/" target="_blank" class="ml-2 mr-5 text-yellow-600 hover:bg-gray-300 roboto300">wbcollectiveph</a>
-                </p>
-                <p class="container mt-1 text-sm text-gray-500 font-mono roboto300">
-                    <a href="https://goo.gl/maps/ne3XJaN2v4ZQgct47" target="_blank" class="ml-2 roboto300 text-yellow-600">NPM Bldg, 9010 Doña Aurora St, Lucena, 4301 Quezon</a>
-                </p>
-            </div> -->
-        </div>
-
-        <div class="menu container mt-10 justify-center text-center font-mono">
+<div id="menu" class="snap-start main_page container mx-auto w-full pt-10">
+    <div class="grid justify-center gap-1 grid-cols-1 lg:md:sm:grid-cols-3">
+        <!-- <div class="container justify-center mt-0 h-44 lg:md:sm:h-screen bg-cover bg-center bg-[url('/images/p1.jpeg')]">
+        </div> -->
+        <div class="menu container mt-10 justify-center text-center font-mono col-span-2">
             <h3 class="whitebox_name text-3xl">Drinks and Coffee</h3>
-            <div class="m-10 grid justify-center gap-1 grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2">
+            <div class="roboto100 text-base flex justify-center mt-5">
+                <img src="/images/hot.png" class="w-5 h-6 m-0"/> <span class="mt-1 ml-1">8oz</span>
+                <img src="/images/iced.png" class="w-6 h-6 m-0 ml-5 mt-0.5"/> <span class="mt-1">12oz</span>
+            </div>
+            <div class="mx-10 my-0 grid justify-center gap-1 grid-cols-6">
                 
-                        <div class="menu_front container roboto300 h-40 grid place-content-center">
+                        <div class="menu_front container roboto300 h-36 grid place-content-center col-span-6 lg:col-span-2 md:sm:col-span-3">
                             <p>Americano</p>
                             <p class="roboto100 text-sm">Just coffee no milk no sugar please</p>
-                            <p>100</p>
+                            <p class="flex mx-auto mt-2">
+                                    <img src="/images/hot.png" class="w-5 h-6 m-0"/> <span class="mt-1 ml-1">100</span>
+                                    <img src="/images/iced.png" class="w-6 h-6 m-0 ml-5 mt-0.5"/> <span class="mt-1">120</span></p>
                         </div>
-                        <!-- <tr><td class="w-6/12 mt-10 p-0 py-1.5 text-left pl-10">Americano</td> <td class="w-2/12"></td> <td class="w-4/12">100</td></tr> -->
-                        <div class="menu_front container roboto300 h-40 grid place-content-center">
+                        <div class="menu_front container roboto300 h-36 grid place-content-center col-span-6 lg:col-span-2 md:sm:col-span-3">
                             <p>Cappuccino</p>
                             <p class="roboto100 text-sm">Coffee with milk but little foam only or no foam. IDK</p>
-                            <p>120</p>
+                            <p class="flex mx-auto mt-2">
+                                    <img src="/images/hot.png" class="w-5 h-6 m-0"/> <span class="mt-1 ml-1">120</span>
+                                    <img src="/images/iced.png" class="w-6 h-6 m-0 ml-5 mt-0.5"/> <span class="mt-1">130</span></p>
                         </div>
-                        <!-- <tr><td class="w-6/12 mt-10 p-0 py-1.5 text-left pl-10">Cappuccino</td> <td class="w-2/12"></td> <td class="w-4/12">120</td></tr> -->
-                        <div class="menu_front container roboto300 h-40 grid place-content-center">
+                        <div class="menu_front container roboto300 h-36 grid place-content-center col-span-6 lg:col-span-2 md:sm:col-span-3">
                             <p>Latte</p>
                             <p class="roboto100 text-sm">This is coffee with milk I think but more milk, no sugar please.</p>
-                            <p>110</p>
+                            <p class="flex mx-auto mt-2">
+                                    <img src="/images/hot.png" class="w-5 h-6 m-0"/> <span class="mt-1 ml-1">110</span>
+                                    <img src="/images/iced.png" class="w-6 h-6 m-0 ml-5 mt-0.5"/> <span class="mt-1">130</span></p>
                         </div>
-                        <!-- <tr><td class="w-6/12 mt-10 p-0 py-1.5 text-left pl-10">Latte</td> <td class="w-2/12"></td> <td class="w-4/12">110</td></tr> -->
-                        <div class="menu_front container roboto300 h-40 grid place-content-center">
+                        <div class="menu_front container roboto300 h-36 grid place-content-center col-span-6 lg:col-span-2 md:sm:col-span-3">
                             <p>Spanish Latte</p>
                             <p class="roboto100 text-sm">Soy café con leche pero en español. Sin azúcar por favor.</p>
-                            <p>120</p>
+                            <p class="flex mx-auto mt-2">
+                                    <img src="/images/iced.png" class="w-6 h-6 m-0 ml-5 mt-0.5"/> <span class="mt-1">130</span></p>
                         </div>
-                        <!-- <tr><td class="w-6/12 mt-10 p-0 py-1.5 text-left pl-10">Spanish Latte</td> <td class="w-2/12"></td> <td class="w-4/12">120</td></tr> -->
+                        <div class="menu_front container roboto300 h-36 grid place-content-center col-span-6 lg:col-span-2 md:sm:col-span-3">
+                            <p>Oreo Latte</p>
+                            <p class="roboto100 text-sm">If you like oreo, pick me plz.</p>
+                            <p class="flex mx-auto mt-2">
+                                    <img src="/images/iced.png" class="w-6 h-6 m-0 ml-5 mt-0.5"/> <span class="mt-1">120</span></p>
+                        </div>
+                        <div class="menu_front container roboto300 h-36 grid place-content-center col-span-6 lg:col-span-2 md:sm:col-span-3">
+                            <p>Matcha</p>
+                            <p class="roboto100 text-sm">Matcha good for business :)</p>
+                            <p class="flex mx-auto mt-2">
+                                    <img src="/images/iced.png" class="w-6 h-6 m-0 ml-5 mt-0.5"/> <span class="mt-1">150</span></p>
+                        </div>
             </div>
-            <h3 class="whitebox_name text-3xl">Food and Snacks</h3>
-            <div class="grid justify-center gap-1 grid-cols-1 lg:md:sm:grid-cols-3 m-10">
+            <span class="text-sm roboto100">- Add 10 to upsize your cold drinks to 16oz -</span>
+            <h3 class="whitebox_name text-3xl mt-10">Food and Snacks</h3>
+            <div class="m-10 grid justify-center gap-1 grid-cols-6">
                 
-                        <div class="menu_front container roboto300 h-40">
+                    <div class="menu_front container roboto300 h-36 grid place-content-center col-span-6 lg:col-span-2 md:sm:col-span-3">
                             <p>Salted Cookies</p>
-                            <p>I like cookies coz im cookie monster k. tnx.</p>
-                            <p>120</p>
+                            <p class="roboto100 text-sm">I like cookies coz im cookie monster k. tnx.</p>
+                            <p class="mt-2">120</p>
                         </div>
-                        <!-- <tr><td class="w-6/12 mt-10 p-0 py-1.5 text-left pl-10">Salted Cookies</td> <td class="w-2/12"></td> <td class="w-4/12">120</td></tr> -->
-                        <div class="menu_front container roboto300 h-40">
+                    <div class="menu_front container roboto300 h-36 grid place-content-center col-span-6 lg:col-span-2 md:sm:col-span-3">
                             <p>Grilled Cheese Sandwich</p>
-                            <p>There&#39;s three cheese here I think. Toasted bread, sooo good. So much toast and cheese much wow!</p>
-                            <p>120</p>
+                            <p class="roboto100 text-sm">There&#39;s three cheese here I think. Toasted bread, sooo good. So much toast and cheese much wow!</p>
+                            <p class="mt-2">120</p>
                         </div>
-                        <!-- <tr><td class="w-6/12 mt-10 p-0 py-1.5 text-left pl-10">Grilled Cheese Sandwich</td> <td class="w-2/12"></td> <td class="w-4/12">120</td></tr> -->
             </div>
-            <!-- <table class="menu_table container mt-10 mb-10 roboto300">
-                <thead><tr><td class="w-6/12"></td> <td class="2/12"></td> <td class="w-4/12 font-light text-xs">starts at</td></tr></thead>
-                <tbody>
-                    
-                        <tr><td class="w-6/12 mt-10 p-0 py-1.5 text-left pl-10">Americano</td> <td class="w-2/12"></td> <td class="w-4/12">100</td></tr>
-                        <tr><td class="w-6/12 mt-10 p-0 py-1.5 text-left pl-10">Cappuccino</td> <td class="w-2/12"></td> <td class="w-4/12">120</td></tr>
-                        <tr><td class="w-6/12 mt-10 p-0 py-1.5 text-left pl-10">Latte</td> <td class="w-2/12"></td> <td class="w-4/12">110</td></tr>
-                        <tr><td class="w-6/12 mt-10 p-0 py-1.5 text-left pl-10">Spanish Latte</td> <td class="w-2/12"></td> <td class="w-4/12">120</td></tr>
-                        <tr><td class="w-6/12 mt-10 p-0 py-1.5 text-left pl-10">Oreo Latte</td> <td class="w-2/12"></td> <td class="w-4/12">120</td></tr>
-                        <tr><td class="w-6/12 mt-10 p-0 py-1.5 text-left pl-10">Matcha</td> <td class="w-2/12"></td> <td class="w-4/12">150</td></tr>
-                        <tr><td class="w-6/12 mt-10 p-0 py-1.5 text-left pl-10">Salted Cookies</td> <td class="w-2/12"></td> <td class="w-4/12">120</td></tr>
-                        <tr><td class="w-6/12 mt-10 p-0 py-1.5 text-left pl-10">Grilled Cheese Sandwich</td> <td class="w-2/12"></td> <td class="w-4/12">120</td></tr>
-                </tbody>
-            </table>
-            <a href="/menu" class="text-gray-900 text-sm hover:bg-gray-500 p-1 mt-5 roboto300">- full menu here -</a>         -->
+            <h3 class="whitebox_name text-3xl">Coffee Beans</h3>
+            <div class="m-10 grid justify-center gap-1 grid-cols-6">
+                
+                    <div class="menu_front container roboto300 h-36 grid place-content-center col-span-6 lg:col-span-2 md:sm:col-span-3">
+                            <p>Whitebox Own Blend</p>
+                            <p class="roboto100 text-sm">I make my own coffee blend. Beans here, beans there, beans everywhere.</p>
+                            <p class="mt-2">500</p>
+                        </div>
+                        <!-- <tr><td class="w-6/12 mt-10 p-0 py-1.5 text-left pl-10">Whitebox Own Blend</td> <td class="w-2/12"></td> <td class="w-4/12">500</td></tr> -->
+                    <div class="menu_front container roboto300 h-36 grid place-content-center col-span-6 lg:col-span-2 md:sm:col-span-3">
+                            <p>El Salvador</p>
+                            <p class="roboto100 text-sm">Beans not from here, from far far away, but still good. Cold brew ftw!</p>
+                            <p class="mt-2">600</p>
+                        </div>
+                        <!-- <tr><td class="w-6/12 mt-10 p-0 py-1.5 text-left pl-10">El Salvador</td> <td class="w-2/12"></td> <td class="w-4/12">600</td></tr> -->
+            </div>
+        </div>
+        <div class="col-span-1 grid justify-center mt-0 auto-cols-max grid-cols-2 invisible lg:md:sm:visible">
+            <div class="col-span-1 drop-shadow-lg img_gray w-full h-auto grid place-content-center bg-cover bg-center bg-[url('/images/m4.jpeg')]"></div>
+            <div class="col-span-1 drop-shadow-lg img_gray w-full h-auto grid place-content-center bg-cover bg-center bg-[url('/images/m1.jpeg')]"></div>
+            <!-- <div class="col-span-1 drop-shadow-lg img_gray w-full h-auto grid place-content-center bg-cover bg-center bg-[url('/images/m3.jpeg')]"></div> -->
+        
+            <div class="col-span-1 drop-shadow-lg img_gray w-full h-auto grid place-content-center bg-cover bg-center bg-[url('/images/m5.jpeg')]"></div>
+            <div class="col-span-1 drop-shadow-lg img_gray w-full h-auto grid place-content-center btw"><p class="whitebox_name text-2xl text-white">Whitebox</p></div>
+            <!-- <div class="col-span-1 drop-shadow-lg img_gray w-full h-auto grid place-content-center bg-cover bg-center bg-[url('/images/m6.jpeg')]"></div> -->
+
+            <div class="col-span-1 drop-shadow-lg img_gray w-full h-auto grid place-content-center bg-cover bg-center bg-[url('/images/m2.jpeg')]"></div>
+            <div class="col-span-1 drop-shadow-lg img_gray w-full h-auto grid place-content-center wtb"><p class="whitebox_name text-2xl">Collective</p></div>
+            <!-- <div class="col-span-1 drop-shadow-lg img_gray w-full h-auto grid place-content-center bg-cover bg-center bg-[url('/images/m2.jpeg')]"></div> -->
+
+            <div class="col-span-1 drop-shadow-lg img_gray w-full h-auto grid place-content-center bg-cover bg-center bg-[url('/images/m6.jpeg')]"></div>
+            <div class="col-span-1 drop-shadow-lg img_gray w-full h-auto grid place-content-center bg-cover bg-center bg-[url('/images/m3.jpeg')]"></div>
+            <!-- <div class="col-span-1 drop-shadow-lg img_gray w-full h-auto grid place-content-center bg-cover bg-center bg-[url('/images/m7.jpeg')]"></div> -->
+        </div>
+    </div>
+</div>
+<div id="services" class="snap-start flex items-center justify-center h-screen mb-12 bg-fixed grayscale bg-center bg-cover bg-[url('/images/ban2.jpeg')] m-0 p-0 mt-10">   
+    <div class="w-full"><h3 class="text-6xl text-center whitebox_name mb p-5 w-3/4 m-auto text-white bg-black bg-opacity-75">Services</h3></div> 
+</div>
+
+<div class="snap-start container w-full w-max-full mx-auto text-center mt-12 mb-14 h-screen grid place-content-center">
+    <div class="whitebox_name w-full text-4xl">Coffee Cart</div>
+    <div class="w-full flex flex-col lg:md:sm:flex-row justify-center mt-5 lg:md:sm:mt-16">
+        <div class="w-full lg:md:sm:w-1/4 h-56 text-center grid place-content-center">
+            <p class="roboto100 m-10">We want to make sure your special day becomes more special. Our cart services cater to your specific needs. We make sure out offering matches your special day.</p>
+        </div>
+        <div class="w-full lg:md:sm:w-1/4 h-56 text-center grid place-content-center">
+            <p class="roboto300">Our typical package includes:</p>
+            <ul class="roboto100 list-disc mt-5 text-left ml-14">
+                <li>Cart</li>
+                <li>Cookies</li>
+                <li>Coffee of choosing</li>
+                <li>Beans</li>
+                <li>100 Cups</li>
+                <li>Hands on barista</li>
+            </ul>
+            <p class="roboto100 m-5 text-left">For custom package/request, please <a href="/#contact" class="underline hover:bg-slate-200">leave us a message!</a></p>
         </div>
     </div>
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script>
-    const swiper = new Swiper('.mySwiper', {
-    // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-        speed: 400,
-        effect: 'fade',
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-        },
-        slidesPerView: 1
-    });
-</script>
+<div class="snap-center snap-y snap-mandatory h-screen overflow-scroll">
+    <div class="flex flex-col md:sm:flex-row h-screen w-full snap-start">
+        <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full mb-12 bg-fixed bg-center bg-cover bg-[url('/images/cart2.jpg')]">
+        </div>
+        <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full grid place-content-center">
+            <p class="whitebox_name text-3xl">Weddings</p>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:sm:flex-row h-screen w-full snap-start">
+        <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full grid place-content-center">
+            <p class="whitebox_name text-3xl">Reunions</p>
+        </div>
+        <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full mb-12 bg-fixed bg-center bg-cover bg-[url('/images/cart3.jpg')]">
+        </div>
+    </div>
+
+    <div class="flex flex-col md:sm:flex-row h-screen w-full snap-start">
+        <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full mb-12 bg-fixed bg-center bg-cover bg-[url('/images/cart4.jpeg')]">
+        </div>
+        <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full grid place-content-center">
+            <p class="whitebox_name text-3xl">Baptismals</p>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:sm:flex-row h-screen w-full snap-start">
+        <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full grid place-content-center">
+            <p class="whitebox_name text-3xl">Birthdays</p>
+        </div>
+        <div class="container w-full md:sm:w-6/12 h-1/2 md:sm:h-full mb-12 bg-fixed bg-center bg-cover bg-[url('/images/p3.jpg')]">
+        </div>
+    </div>
+</div>
+
+
+<div class="snap-start container w-full w-max-full mx-auto text-center mt-12 mb-14 h-screen grid place-content-center">
+    <div class="whitebox_name w-full text-4xl">Space Rental</div>
+    <div class="w-full flex flex-col lg:md:sm:flex-row justify-center mt-5 lg:md:sm:mt-16">
+        <div class="w-full lg:md:sm:w-1/4 h-56 text-center grid place-content-center">
+            <p class="roboto100 m-10">We want to make sure your special day becomes more special. Our cart services cater to your specific needs. We make sure out offering matches your special day.</p>
+        </div>
+        <div class="w-full lg:md:sm:w-1/4 h-56 text-center grid place-content-center">
+            <p class="roboto300">Our typical package includes:</p>
+            <ul class="roboto100 list-disc mt-5 text-left ml-14">
+                <li>Cart</li>
+                <li>Cookies</li>
+                <li>Coffee of choosing</li>
+                <li>Beans</li>
+                <li>100 Cups</li>
+                <li>Hands on barista</li>
+            </ul>
+            <p class="roboto100 m-5 text-left">For custom package/request, please <a href="/#contact" class="underline hover:bg-slate-200">leave us a message!</a></p>
+        </div>
+    </div>
+</div>
+
+<div id="contact" class="snap-center flex items-center justify-center h-screen bg-fixed bg-center bg-cover bg-[url('/images/contact.jpeg')] m-0 p-0 mt-10">   
+    <div class="reachus container p-10 content-center text-center w-full bg-white bg-opacity-60">
+        <h3 class="whitebox_name text-5xl text-center">Contact us</h3>
+        <p class="container mt-5 text-lg text-gray-500 mx-auto">
+            <!-- <img class="social-icon" src="/images/fb.svg" class="w-20"/> -->
+            FB: <a href="https://www.facebook.com/wbcollectiveph" target="_blank" class="ml-2 mr-5 text-yellow-600 hover:bg-gray-300 roboto300">wbcollectiveph</a> 
+            <!-- <img class="social-icon" src="/images/ig.svg" class="w-20"/> -->
+            IG: <a href="https://www.instagram.com/wbcollectiveph/" target="_blank" class="ml-2 mr-5 text-yellow-600 hover:bg-gray-300 roboto300">wbcollectiveph</a>
+            <!-- <img class="social-icon" src="/images/email.svg" class="w-20"/><a href="mailto:whiteboxcllctv@gmail.com" target="_blank" class="ml-2 mr-5 hover:bg-gray-300"> wbcollectiveph@gmail.com</a> -->
+        </p>
+        <p class="container mt-1 text-lg text-gray-500 font-mono roboto300">
+            <a href="https://goo.gl/maps/ne3XJaN2v4ZQgct47" target="_blank" class="ml-2 roboto300 text-yellow-600">NPM Bldg, 9010 Doña Aurora St, Lucena, 4301 Quezon</a>
+        </p>
+    </div>
+</div>
         </main>
     </div>
-    <footer class="footer w-full text-center py-5 mt-10 text-gray-300 bg-gray-950">
+
+
+    <!-- <footer class="footer w-full text-center py-5 text-gray-300 bg-gray-950">
         <p class="roboto300 text-white">&copy; Whitebox Collective 2023</p>
-    </footer>
+    </footer> -->
 </body>
 </html>

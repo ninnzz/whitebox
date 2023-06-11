@@ -48,3 +48,39 @@
 .menu_front:hover {
     background-color: rgb(231, 231, 231);
 }
+
+.btw {
+    background-color: #000;
+    transition: all 0.2s ease;
+}
+
+.btw:hover {
+    background-color: #fff;
+}
+
+.btw:hover p {
+    color: #000;
+}
+
+.wtb {
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+
+.wtb:hover {
+    background-color: #000;
+}
+
+.wtb:hover p {
+    color: #fff;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
