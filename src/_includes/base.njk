@@ -19,14 +19,10 @@
 <body class="overflow-x-hidden h-auto">
     
     {% include "header.njk" %}
-    <!-- <main class="flex flex-col justify-center w-screen h-full snap-y snap-mandatory overflow-y-scroll"> -->
-    <main class="container mx-auto justify-center w-screen h-screen snap-y snap-mandatory overflow-y-scroll">
+    <main class="flex flex-col justify-center w-screen h-full snap-y snap-mandatory overflow-y-scroll mb-20">
+    <!-- <main class="container mx-auto justify-center w-screen h-screen snap-y snap-mandatory overflow-y-scroll"> -->
         {{ content | safe }}
     </main>
-    
-
-    <!-- <footer class="footer w-full text-center py-5 text-gray-300 bg-gray-950">
-        <p class="roboto300 text-white">&copy; Whitebox Collective {% year %}</p>
-    </footer> -->
+    {% include "footer.njk" %}
 </body>
 </html>

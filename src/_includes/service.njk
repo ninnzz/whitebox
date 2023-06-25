@@ -1,86 +1,118 @@
-<div class="main_page container mx-auto">
-    <div class="banner-top container w-full justify-center text-center m-auto mb-10 mt-10">
-        <h3 class="text-5xl whitebox_name mb-5 w-3/4 m-auto">What We Offer</h3>
-        <h4 class="text-sm"><i class="whitebox_name_supp  roboto100 text-yellow-600 p-5"> {{ menu_heading }}</i></h5>
-        <!-- <img src="/images/main_logo.png" width="100" height="100"/> -->
-    </div>
-    <div class="container w-full mx-auto text-center mt-12">
-            <h3 class="text-4xl whitebox_name ">Coffee Cart Service</h3>
-            <div class="grid w-8/12 grid-cols-1  gap-4  sm:md:grid-cols-2 mx-auto mt-10">
-                
-                <div class="container border h-64"> 
-                    <h3 class="text-3xl whitebox_name">Weddings</h3>
-                    <div>
-                        
-                    </div>
-                </div>
-                <div class="flex items-center">
-                    <img src="/images/cart2.jpg" class="w-full md:sm:w-10/12 rounded-3xl" />
-                </div>
-                
-                <div class="container border h-96"> 
-                    <h3 class="text-3xl whitebox_name">Weddings</h3>
-                    <p class="text-right">Any spec</p>
-                </div>
-                <div class="border h-96">
-                    <img src="/images/cart2.jpg" class="w-10/12" />
-                </div>
+<div id="services" class="snap-start flex items-center justify-center h-screen mb-12 bg-fixed grayscale bg-center bg-cover bg-[url('/images/ban2.jpeg')] m-0 p-0">   
+    <div class="w-full"><h3 class="text-6xl text-center whitebox_name mb p-5 w-3/4 m-auto text-white bg-black bg-opacity-75">Services</h3></div> 
+</div>
 
-                <div class="container border h-96"> 
-                    <h3 class="text-3xl whitebox_name">Weddings</h3>
-                    <p class="text-right">Any spec</p>
-                </div>
-                <div class="border h-96">
-                    <img src="/images/cart2.jpg" class="w-10/12" />
-                </div>
-
-            </div>
-
-    </div>
-    <div class="reachus container mt-20 content-center text-center">
-        <h3 class="whitebox_name text-4xl text-center">Let's talk?</h3>
-        <p class="container mt-5 text-sm text-gray-500 mx-auto">
-            <!-- <img class="social-icon" src="/images/fb.svg" class="w-20"/> -->
-            FB: <a href="https://www.facebook.com/wbcollectiveph" target="_blank" class="ml-2 mr-5 text-yellow-600 hover:bg-gray-300 roboto300">wbcollectiveph</a> 
-            <!-- <img class="social-icon" src="/images/ig.svg" class="w-20"/> -->
-            IG: <a href="https://www.instagram.com/wbcollectiveph/" target="_blank" class="ml-2 mr-5 text-yellow-600 hover:bg-gray-300 roboto300">wbcollectiveph</a>
-            <!-- <img class="social-icon" src="/images/email.svg" class="w-20"/><a href="mailto:whiteboxcllctv@gmail.com" target="_blank" class="ml-2 mr-5 hover:bg-gray-300"> wbcollectiveph@gmail.com</a> -->
-        </p>
-        <p class="container mt-1 text-sm text-gray-500 font-mono roboto300">
-            <a href="https://goo.gl/maps/ne3XJaN2v4ZQgct47" target="_blank" class="ml-2 roboto300 text-yellow-600">NPM Bldg, 9010 Doña Aurora St, Lucena, 4301 Quezon</a>
-        </p>
+<div class="snap-start container w-full w-max-full mx-auto text-center mt-12 mb-14 h-screen grid place-content-center">
+    <div class="whitebox_name w-full text-4xl">Coffee Cart</div>
+    <div class="w-full flex flex-col lg:md:sm:flex-row justify-center mt-5 lg:md:sm:mt-16">
+        <div class="w-full lg:md:sm:w-1/4 h-56 text-center grid place-content-center">
+            <p class="roboto100 m-10">We want to make sure your special day becomes more special. Our cart services cater to your specific needs. We make sure out offering matches your special day.</p>
+        </div>
+        <div class="w-full lg:md:sm:w-1/4 h-56 text-center grid place-content-center">
+            <p class="roboto300">Our typical package includes:</p>
+            <ul class="roboto100 list-disc mt-5 text-left ml-14">
+                <li>Cart</li>
+                <li>Cookies</li>
+                <li>Coffee of choosing</li>
+                <li>Beans</li>
+                <li>100 Cups</li>
+                <li>Hands on barista</li>
+            </ul>
+            <p class="roboto100 m-5 text-left">For custom package/request, please <a href="/#contact" class="underline hover:bg-slate-200">leave us a message!</a></p>
+        </div>
     </div>
 </div>
 
-<!-- 
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script>
-    const swiper = new Swiper('.mySwiper', {
-        loop: true,
-        autoplay: {
-            delay: 1,
-            disableOnInteraction: false,
-        },
-        speed: 20000,
-        grabCursor: true,
-        mousewheelControl: false,
-        keyboardControl: false,
-        scrollbar: false,
-        initialSlide: 3,
+<!-- <div class="snap-center snap-y snap-mandatory h-screen overflow-scroll"> -->
+<div class="grid auto-cols-max justify-center grid-cols-1 md:sm:grid-cols-2 h-screen snap-center">
+    <div class="container h-screen md:sm:h-screen mb-12 bg-fixed bg-center bg-cover bg-[url('/images/cart2.jpg')] grid place-content-center">
+        <p class="visible md:sm:invisible whitebox_name text-4xl bg-black opacity-70 text-white p-5">Weddings</p>
+    </div>
+    <div class="invisible md:sm:visible container h-0 md:sm:h-full grid place-content-center">
+        <p class="whitebox_name text-3xl">Weddings</p>
+    </div>
+</div>
 
-        // direction: 'horizontal',
-        // loop: true,
-        // speed: 400,
-        effect: 'slide',
-        // autoplay: {
-        //     delay: 2500,
-        //     disableOnInteraction: false
-        // },
-        // pagination: {
-        //     el: '.swiper-pagination',
-        //     type: 'bullets',
-        // },
-        slidesPerView: "auto",
-        lazyPreloadPrevNext: 4
-    });
-</script> -->
+<div class="grid auto-cols-max justify-center grid-cols-1 md:sm:grid-cols-2 h-screen snap-center">
+    <div class="invisible md:sm:visible container h-0 md:sm:h-full grid place-content-center">
+        <p class="whitebox_name text-3xl">Reunions</p>
+    </div>
+    <div class="container h-screen md:sm:h-screen mb-12 bg-fixed bg-center bg-cover bg-[url('/images/cart3.jpg')] grid place-content-center">
+        <p class="visible md:sm:invisible whitebox_name text-4xl bg-black opacity-70 text-white p-5">Reunions</p>
+    </div>
+</div>
+
+<div class="grid auto-cols-max justify-center grid-cols-1 md:sm:grid-cols-2 h-screen snap-center">
+    <div class="container h-screen md:sm:h-screen mb-12 bg-fixed bg-center bg-cover bg-[url('/images/cart4.jpeg')] grid place-content-center">
+        <p class="visible md:sm:invisible whitebox_name text-4xl bg-black opacity-70 text-white p-5">Baptismals</p>
+    </div>
+    <div class="invisible md:sm:visible container h-0 md:sm:h-full grid place-content-center">
+        <p class="whitebox_name text-3xl">Baptismals</p>
+    </div>
+</div>
+
+<div class="grid auto-cols-max justify-center grid-cols-1 md:sm:grid-cols-2 h-screen snap-center">
+    <div class="invisible md:sm:visible container h-0 md:sm:h-full grid place-content-center">
+        <p class="whitebox_name text-3xl">Birthdays</p>
+    </div>
+    <div class="container h-screen md:sm:h-screen mb-12 bg-fixed bg-center bg-cover bg-[url('/images/p3.jpg')] grid place-content-center">
+        <p class="visible md:sm:invisible whitebox_name text-4xl bg-black opacity-70 text-white p-5">Birthdays</p>
+    </div>
+</div>
+<!-- </div> -->
+
+
+<div class="snap-start container w-full w-max-full mx-auto text-center mt-12 mb-14 h-screen grid place-content-center">
+    <div class="whitebox_name w-full text-4xl">Space Rental</div>
+    <div class="w-full flex flex-col lg:md:sm:flex-row justify-center mt-5 lg:md:sm:mt-16">
+        <div class="w-full lg:md:sm:w-1/4 h-56 text-center grid place-content-center">
+            <p class="roboto100 m-10">We want to make sure your special day becomes more special. Our cart services cater to your specific needs. We make sure out offering matches your special day.</p>
+        </div>
+        <div class="w-full lg:md:sm:w-1/4 h-56 text-center grid place-content-center">
+            <p class="roboto300">Our typical package includes:</p>
+            <ul class="roboto100 list-disc mt-5 text-left ml-14">
+                <li>Cart</li>
+                <li>Cookies</li>
+                <li>Coffee of choosing</li>
+                <li>Beans</li>
+                <li>100 Cups</li>
+                <li>Hands on barista</li>
+            </ul>
+            <p class="roboto100 m-5 text-left">For custom package/request, please <a href="/#contact" class="underline hover:bg-slate-200">leave us a message!</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="flex flex-wrap items-center justify-center h-screen bg-fixed bg-center bg-cover bg-[url('/images/colab2.jpeg')] place-content-center">
+    <p class="whitebox_name text-4xl bg-black opacity-70 text-white p-5">Brewing Class</p>
+</div>
+<div class="flex flex-wrap items-center justify-center h-screen bg-center bg-cover bg-[url('/images/colab1.jpeg')] place-content-center">
+    <p class="whitebox_name text-4xl bg-black opacity-70 text-white p-5">Open Mic/Music Events</p>
+</div>
+<div class="flex flex-wrap items-center justify-center h-screen bg-fixed bg-center bg-cover bg-[url('/images/colab3.jpeg')] place-content-center">
+    <p class="whitebox_name text-4xl bg-black opacity-70 text-white p-5">Food Partnerships</p>
+</div>
+
+
+<div class="snap-start container w-full w-max-full mx-auto text-center mt-12 mb-14 h-screen grid place-content-center">
+    <div class="whitebox_name w-full text-4xl">Community Partners</div>
+    <div class="w-full flex flex-col lg:md:sm:flex-row justify-center mt-5 lg:md:sm:mt-16">
+        <div class="w-full grid grid-cols-4 lg:md:sm:w-1/4 h-56">
+            {% for partner in partners %}
+                <div class="container m-1 w-min-6/12 w-6/12 lg:md:sm:w-9/12"><img class="rounded-full border" src="/images/{{ partner.img }}"/><span class="roboto100 text-xs">{{partner.name}}</span></div>
+            {% endfor %}
+        </div>
+        <div class="w-full lg:md:sm:w-1/4 h-56 text-center grid place-content-center">
+            <p class="roboto300">Our typical package includes:</p>
+            <ul class="roboto100 list-disc mt-5 text-left ml-14">
+                <li>Cart</li>
+                <li>Cookies</li>
+                <li>Coffee of choosing</li>
+                <li>Beans</li>
+                <li>100 Cups</li>
+                <li>Hands on barista</li>
+            </ul>
+            <p class="roboto100 m-5 text-left">For custom package/request, please <a href="/#contact" class="underline hover:bg-slate-200">leave us a message!</a></p>
+        </div>
+    </div>
+</div>

@@ -31,7 +31,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ "./src/favicons": "/" });
 
     return {
-        // pathPrefix: "whitebox",
+        pathPrefix: "whitebox",
         dir: {
             input: "src",
             output: "docs"
