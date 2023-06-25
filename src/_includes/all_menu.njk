@@ -1,51 +1,72 @@
-<div class="main_page container mx-auto">
-    <div class="banner-top container w-full justify-center text-center m-auto mb-10 mt-10">
-        <h3 class="text-5xl whitebox_name mb-5 w-3/4 m-auto">Menu</h3>
-        <h4 class="text-sm"><i class="whitebox_name_supp roboto100 text-yellow-600 p-5 pr-10"> {{ menu_heading }}</i></h5>
-    </div>
-    <div class="container justify-center">
-        <table class="container w-12/12 lg:md:sm:w-7/12 mx-auto roboto300">
-            <thead>
-                <tr><td colspan="2" class="text-right pr-10 text-xs md:sm:text-sm">hot (8oz) / cold (12oz)</td></tr>
-            </thead>
-            <tbody>
+<div id="menu" class="snap-start main_page container mx-auto w-full pt-10">
+    <div class="grid justify-center gap-1 grid-cols-1 lg:md:sm:grid-cols-3">
+        <div class="menu container mt-10 justify-center text-center font-mono col-span-2">
+            <h3 class="whitebox_name text-3xl">Drinks and Coffee</h3>
+            <div class="roboto100 text-base flex justify-center mt-5">
+                <img src="/images/hot.png" class="w-5 h-6 m-0"/> <span class="mt-1 ml-1">8oz</span>
+                <img src="/images/iced.png" class="w-6 h-6 m-0 ml-5 mt-0.5"/> <span class="mt-1">12oz</span>
+            </div>
+            <div class="mx-10 my-0 grid justify-center gap-1 grid-cols-6">
                 {% for menu_item in collections.drinks %}
-                        <tr class="text-xl hover:bg-yellow-100">
-                            <td class="w-3/4 mt-10 p-0 py-1.5 text-left pl-10">
-                                {{ menu_item.data.name }} <br/>
-                                <i class="roboto100 text-sm pl-2">{{ menu_item.data.description }}</i>
-                        </td> 
-                            <td class="w-3/4 pr-5 text-center">{{ menu_item.data.priceHot }} / {{ menu_item.data.priceCold }}</td>
-                        </tr>
+                    {%- if menu_item.data.frontPage %}
+                        <div class="menu_front container roboto300 h-36 grid place-content-center col-span-6 lg:col-span-2 md:sm:col-span-3">
+                            <p>{{ menu_item.data.name }}</p>
+                            <p class="roboto100 text-sm">{{ menu_item.data.description }}</p>
+                            <p class="flex mx-auto mt-2">
+                                {%- if menu_item.data.priceHot %}
+                                    <img src="/images/hot.png" class="w-5 h-6 m-0"/> <span class="mt-1 ml-1">{{ menu_item.data.priceHot }}</span>
+                                {%- endif -%}
+                                {%- if menu_item.data.priceCold %}
+                                    <img src="/images/iced.png" class="w-6 h-6 m-0 ml-5 mt-0.5"/> <span class="mt-1">{{ menu_item.data.priceCold }}</span>
+                                {%- endif -%}
+                            </p>
+                        </div>
+                    {%- endif -%}
                 {% endfor %}
-                <tr>
-                    <td colspan="2" class="text-center text-sm md:sm:text-base roboto100 py-10">
-                        - Just add 10 php to upsize your cold drinks to 16oz -
-                    </td
-                ></tr>
-                <!-- <tr><td colspan="2" class="text-center text-lg">♨o(>_<)o♨</td></tr> -->
-                {% for menu_item in collections.foods %}
-                        <tr class="text-xl hover:bg-yellow-100">
-                            <td class="w-3/4 mt-10 p-0 py-1.5 text-left pl-10">
-                                {{ menu_item.data.name }} <br/>
-                                <i class="roboto100 text-sm pl-2">{{ menu_item.data.description }}</i>
-                            </td> 
-                            <td class="w-3/4 text-center">{{ menu_item.data.priceStart }}</td></tr>
+            </div>
+            <span class="text-sm roboto100">- Add 10 to upsize your cold drinks to 16oz -</span>
+            <h3 class="whitebox_name text-3xl mt-10">Food and Snacks</h3>
+            <div class="m-10 grid justify-center gap-1 grid-cols-6">
+                {% for menu_item in collections.front_food %}
+                    {%- if menu_item.data.frontPage %}
+                    <div class="menu_front container roboto300 h-36 grid place-content-center col-span-6 lg:col-span-2 md:sm:col-span-3">
+                            <p>{{ menu_item.data.name }}</p>
+                            <p class="roboto100 text-sm">{{ menu_item.data.description }}</p>
+                            <p class="mt-2">{{ menu_item.data.priceStart }}</p>
+                        </div>
+                    {%- endif -%}
                 {% endfor %}
-            </tbody>
-        </table>
-    </div>
-    <div class="reachus container mt-20 content-center text-center">
-        <h3 class="whitebox_name text-4xl text-center">Contact us</h3>
-        <p class="container mt-5 text-sm text-gray-500 mx-auto">
-            <!-- <img class="social-icon" src="/images/fb.svg" class="w-20"/> -->
-            FB: <a href="https://www.facebook.com/wbcollectiveph" target="_blank" class="ml-2 mr-5 text-yellow-600 hover:bg-gray-300 roboto300">wbcollectiveph</a> 
-            <!-- <img class="social-icon" src="/images/ig.svg" class="w-20"/> -->
-            IG: <a href="https://www.instagram.com/wbcollectiveph/" target="_blank" class="ml-2 mr-5 text-yellow-600 hover:bg-gray-300 roboto300">wbcollectiveph</a>
-            <!-- <img class="social-icon" src="/images/email.svg" class="w-20"/><a href="mailto:whiteboxcllctv@gmail.com" target="_blank" class="ml-2 mr-5 hover:bg-gray-300"> wbcollectiveph@gmail.com</a> -->
-        </p>
-        <p class="container mt-1 text-sm text-gray-500 font-mono roboto300">
-            <a href="https://goo.gl/maps/ne3XJaN2v4ZQgct47" target="_blank" class="ml-2 roboto300 text-yellow-600">NPM Bldg, 9010 Doña Aurora St, Lucena, 4301 Quezon</a>
-        </p>
+            </div>
+            <h3 class="whitebox_name text-3xl">Coffee Beans</h3>
+            <div class="m-10 grid justify-center gap-1 grid-cols-6">
+                {% for menu_item in collections.front_beans %}
+                    {%- if menu_item.data.frontPage %}
+                    <div class="menu_front container roboto300 h-36 grid place-content-center col-span-6 lg:col-span-2 md:sm:col-span-3">
+                            <p>{{ menu_item.data.name }}</p>
+                            <p class="roboto100 text-sm">{{ menu_item.data.description }}</p>
+                            <p class="mt-2">{{ menu_item.data.priceStart }}</p>
+                        </div>
+                        <!-- <tr><td class="w-6/12 mt-10 p-0 py-1.5 text-left pl-10">{{ menu_item.data.name }}</td> <td class="w-2/12"></td> <td class="w-4/12">{{ menu_item.data.priceStart }}</td></tr> -->
+                    {%- endif -%}
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-span-full lg:md:sm:col-span-1 lg:md:sm:w-full grid justify-center mt-0 auto-cols-max grid-cols-3 lg:md:sm:grid-cols-2">
+            <div class="col-span-1 drop-shadow-lg img_gray w-full h-40 lg:md:sm:h-auto grid place-content-center bg-cover bg-center bg-[url('/images/m4.jpeg')]"></div>
+            <div class="col-span-1 drop-shadow-lg img_gray w-full h-40 lg:md:sm:h-auto grid place-content-center bg-cover bg-center bg-[url('/images/m1.jpeg')]"></div>
+            <!-- <div class="col-span-1 drop-shadow-lg img_gray w-full h-auto grid place-content-center bg-cover bg-center bg-[url('/images/m3.jpeg')]"></div> -->
+        
+            <div class="col-span-1 drop-shadow-lg img_gray w-full h-40 lg:md:sm:h-auto grid place-content-center bg-cover bg-center bg-[url('/images/m5.jpeg')]"></div>
+            <div class="col-span-1 drop-shadow-lg img_gray w-full h-auto grid place-content-center btw"><p class="whitebox_name text-2xl text-white">Whitebox</p></div>
+            <!-- <div class="col-span-1 drop-shadow-lg img_gray w-full h-auto grid place-content-center bg-cover bg-center bg-[url('/images/m6.jpeg')]"></div> -->
+
+            <div class="col-span-1 drop-shadow-lg img_gray w-full h-40 lg:md:sm:h-auto grid place-content-center bg-cover bg-center bg-[url('/images/m2.jpeg')]"></div>
+            <div class="col-span-1 drop-shadow-lg img_gray w-full h-auto grid place-content-center wtb"><p class="whitebox_name text-2xl">Collective</p></div>
+            <!-- <div class="col-span-1 drop-shadow-lg img_gray w-full h-auto grid place-content-center bg-cover bg-center bg-[url('/images/m2.jpeg')]"></div> -->
+
+            <div class="col-span-1 drop-shadow-lg img_gray w-full h-40 lg:md:sm:h-auto grid place-content-center bg-cover bg-center bg-[url('/images/m6.jpeg')]"></div>
+            <div class="col-span-1 drop-shadow-lg img_gray w-full h-40 lg:md:sm:h-auto grid place-content-center bg-cover bg-center bg-[url('/images/m3.jpeg')]"></div>
+            <!-- <div class="col-span-1 drop-shadow-lg img_gray w-full h-auto grid place-content-center bg-cover bg-center bg-[url('/images/m7.jpeg')]"></div> -->
+        </div>
     </div>
 </div>

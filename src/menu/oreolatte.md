@@ -6,7 +6,7 @@ images:
   - "/images/catch-up.jpg"
 imageAlt: "Screenshots of catch up app"
 priceStart: "120"
-priceHot: "----"
+priceHot: null
 priceCold: "120"
 frontPage: true
 tags: ["drinks"]

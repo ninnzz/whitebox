@@ -7,7 +7,7 @@ images:
 imageAlt: "Screenshots of catch up app"
 priceStart: "120"
 frontPage: true
-tags: ["foods"]
+tags: ["foods", "front_food"]
 ---
 
 ### The taste
